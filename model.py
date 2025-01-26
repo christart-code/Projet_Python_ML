@@ -60,7 +60,7 @@ for col in training_cols:
 
 user_data_dummies = user_data_dummies[training_cols]
 
-with open('model.pkl', 'rb') as file:
+with open('model_rs.pkl', 'rb') as file:
     lr_model = pickle.load(file)
 
 prediction = lr_model.predict(user_data_dummies)
